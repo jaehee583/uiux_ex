@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>양식(form)</h1>
+    <h2>로그인</h2>
+    <form>
+        <label for="user-id">ID</label>
+        <input type="text" id="user-id">
+        <br>
+        <label for="user-pass">PASS</label>
+        <input type="password" id="user-pass">
+        <br>
+        <input type="checkbox" id="save-login">
+        <label for="save-login">로그인상태 유지</label>
+        <br>
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+        <br>
+    </form>
+    <br>
+    <form action="login.php">
+        <input type="text">
+        <input type="button" value="버튼">
+        <input type="submit" value="서버전송">
+        <input type="reset" value="입력취소">
+        <br>
+        <button type="button">
+            <img src="./images/coffee.gif">
+        </button>
+        <button type="submit">서버전송</button>
+        <button type="reset">입력취소</button>
+    </form>
+</body>
+</html>
