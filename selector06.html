@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자6</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        a{
+            margin: 50px;
+            text-decoration: none;
+            font-size: 24px;
+            color: red;
+        }
+        a:hover{
+            color: green;
+        }
+        div, section::before, section::after{
+            height: 500px;
+            margin: 50px;
+            font-size: 100px;
+            text-align: center;
+            line-height: 500px;
+        }
+        
+        /* 타겟선택자 */
+        :target{
+            background-color: cyan;
+        }
+        div:nth-child(1){
+            background-color: red;
+        }
+        div:nth-child(2){
+            background-color: green;
+        }
+        div:nth-child(3){
+            background-color: blue;
+        }
+        /* 가상요소선택자 */
+        section::before{
+            content:'박스00';
+            display: block;
+            background-color: yellow;
+        }
+        section::after{
+            content:'박스04';
+            display: block;
+            background-color: black;
+            color: white;
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자6</h1>
+    <a href="#box01">box01</a>
+    <a href="#box02">box02</a>
+    <a href="#box03">box03</a>
+    <section>
+        <div id="box01">박스1</div>
+        <div id="box02">박스2</div>
+        <div id="box03">박스3</div>
+    </section>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos architecto eos sunt corporis, maxime molestiae eaque, atque quo quisquam, perferendis nulla animi quia officia suscipit voluptatum itaque ratione. Animi, ipsam.
+        Ad, dolorem temporibus corrupti, doloribus quaerat eum animi ducimus earum officiis odit harum qui laboriosam consequuntur quibusdam asperiores, commodi laudantium expedita repellendus labore atque eos dolorum aliquam provident possimus? Quod.
+        Eos cumque incidunt velit veniam magni tempore porro cum, quia odit repellendus doloribus. Modi fugiat tempore culpa commodi repellat doloribus ipsa nisi, qui nobis iste voluptatum omnis quas quo perferendis?
+        Commodi autem, non ea eligendi quis, ut ipsum suscipit id et mollitia molestiae, repellat distinctio ipsam blanditiis inventore doloremque exercitationem magnam voluptates expedita? Nostrum ducimus necessitatibus ad qui reiciendis? Dolorem.
+        Quia magni temporibus consequatur illo corporis enim suscipit libero deserunt porro eum placeat, ipsa distinctio dolorem doloremque quas dignissimos animi, a eius incidunt maxime ullam explicabo molestias omnis? Accusamus, suscipit.
+        Repellendus, sequi aspernatur sed voluptas beatae perferendis magni? Dolorem id ab, eos quas assumenda debitis voluptates? Alias dolor corporis fugiat odio unde perspiciatis quod, consectetur, facere obcaecati nulla ex temporibus!
+        Aspernatur numquam cumque ipsum fugiat recusandae quae voluptas hic, aperiam nobis aliquid est ab consequatur blanditiis id eveniet corrupti quia. Magni non eum maiores quae sed. Necessitatibus pariatur similique a.
+        Nihil ab iure ad expedita laudantium architecto, pariatur odit autem dolores. Possimus magnam culpa omnis error pariatur iure consequuntur exercitationem vitae, iusto ipsam ex at vero sit mollitia, quam tempore!
+        Id, soluta voluptatem. Facilis minima ex iusto aspernatur. Atque commodi minus modi ipsa. Iusto perferendis dolore consequatur totam ea laborum animi deleniti voluptates? Expedita omnis architecto ex magni esse quis?
+        Explicabo corrupti, quod cupiditate qui repellat repellendus distinctio ex, tempore, dolorum excepturi iusto optio! Sequi vero impedit obcaecati esse aut, corrupti ea et, praesentium doloribus voluptate distinctio dolores eveniet maxime?
+    </p>
+</body>
+</html>

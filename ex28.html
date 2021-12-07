@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <title>글꼴 스타일</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        :root{
+            font-family: 'Roboto', 'Gugi', sans-serif;
+        }
+        h1:nth-child(3){
+            font-family: 'Gugi';
+        } */
+
+        /* @font-face {
+            font-family: 'jua';
+            src: url('./fonts/jua.ttf');
+        }
+        :root{
+            font-family: 'jua', sans-serif;
+        } */
+
+        /* CSS Reset */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: #000000;
+            text-decoration: none;
+        }
+        ul,ol,li{
+            list-style: none;
+        }
+        
+        /* 폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        :root{
+            font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        h1{
+            color: #000;
+            background-color: #000;
+            text-shadow:0px  0px   4px #ccc,
+                        0px -5px   4px #ff3,
+                        2px -10px  6px #fd3,
+                       -2px -15px 11px #f80,
+                        2px -19px 18px #f20;
+
+        }
+
+        ul li:nth-child(1){
+            font-weight: 100;
+            font-size: 24px;
+        }
+        ul li:nth-child(2){
+            font-weight: 300;
+            font-size: 28px;
+        }
+        ul li:nth-child(3){
+            font-weight: 500;
+            font-size: 32px;
+        }
+        ul li:nth-child(4){
+            font-weight: 700;
+            font-size: 36px;
+        }
+        ul li:nth-child(5){
+            font-weight: 900;
+            font-size: 40px;
+        }
+        ul li:last-child{
+            /* text-decoration-style: solid; */
+            /* text-decoration-color: #f00; */
+            /* text-decoration-line: underline; */
+            /* text-decoration: solid #f00 underline; */
+            color: #ff0;
+            text-decoration: underline;
+        }
+
+        p:first-of-type{  
+            /* font-family: sans-serif; */
+            /* font-weight: 500; */
+            /* font-size: 24px; */
+            font: 24px/30px 'sans-serif';
+            font-style: italic;
+            line-height: 30px;
+            color: #333333;
+            text-align: center;
+        }
+
+        ol li{
+            color: red;
+        }
+        ol li:nth-child(1){
+            color: #f00;
+            color: #ff0000;
+        }
+        ol li:nth-child(2){
+            color: #0f0;
+            color: #00ff00;
+        }
+        ol li:nth-child(3){
+            color: #00f;
+            color: #0000ff;
+        }
+        ol li:nth-child(4){
+            color: #ff0;
+            color: #ffff00;
+        }
+        ol li:nth-child(5){
+            color: #0ff;
+            color: #00ffff;
+        }
+        ol li:nth-child(6){
+            color: #f0f;
+            color: #ff00ff;
+        }
+        ol li:nth-child(7){
+            color: #fff;
+            color: #ffffff;
+            background-color: #000;
+            background-color: #000000;
+        }
+        ol li:nth-child(8){
+            color: #666;
+            color: #666666;
+        }
+        ol li:nth-child(9){
+            color: #ccc;
+            color: #cccccc;
+        }
+        p:last-of-type span:first-child{
+            text-transform: uppercase;
+        }
+        p:last-of-type span:nth-child(2){
+            text-transform: lowercase;
+        }
+        p:last-of-type span:nth-child(3){
+            text-transform: capitalize;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>글꼴 스타일</h1>
+    <ul>
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>박스3</li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+
+    <p>대한민국<br>미국</p>
+
+    <ol>
+        <li>box01</li>
+        <li>box02</li>
+        <li>box03</li>
+        <li>box04</li>
+        <li>box05</li>
+        <li>box06</li>
+        <li>box07</li>
+        <li>box08</li>
+        <li>box09</li>
+    </ol>
+
+    <p>
+        <span>Lorem ipsum dolor sit amet,</span> <span>adipisicing elit. Vero, facere illum</span> <span> numquam odit animi tempora blanditiis officiis minus eveniet? Officiis</span> <span> impedit, quidem vero dolore sed iste eaque ratione.</span>
+    </p>
+    
+    <!-- CSS = 상속, 우선순위
+    prefix = 접두사
+    모든선택(*), 태그선택자, 클래스선택자, 아이디선택자,
+    자손, 자식, 그룹, 가상클래스, 가상요소, 속성 -->
+
+    <!-- 폰트
+    sans-serif:고딕계열
+    serif:명조게열 -->
+
+    <!-- font계열
+    font-family => 글꼴체
+    font-weight => 글두께
+    font-size => 글크기
+    font-style => 글스타일
+    font-height => 줄간격 -->
+
+    <!-- text스타일
+    color => 텍스트색상(hex,name,rgb,rgba,hsl,hsla)
+    text-decoration => 글자의 선
+    text-trasform => 대소문자 변형
+    (uppercase,lowercase,capitalize)
+    text-shadow => 글자그림자(x y blur color)
+    white-space => 줄바꿈(nowrap)
+    text-overflow => 넘치는 글자(ellipsis)
+    letter-spacing => 자간
+    word-spacing => 단어사이 간격
+    font-stretch => 장평(x) -->
+</body>
+</html>
